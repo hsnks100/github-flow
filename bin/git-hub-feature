@@ -7,7 +7,8 @@ start(){
 	BRANCH=${1:?"Please specify a branch name."}
 	git stash
 	git checkout $MASTER
-	git pull $UPSTREAM $MASTER
+    echo "SDFsadfdsfaS"
+	git pull $ORIGIN $MASTER
 	# Just a semantic `git checkout -b $BRANCH $MASTER`
 	git checkout -b $BRANCH $MASTER
 	git stash pop
@@ -31,7 +32,7 @@ update(){
 
 	git checkout $MASTER
 	echo "upstream updates into master..."
-	git pull $UPSTREAM $MASTER
+	git pull $ORIGIN $MASTER
 	git checkout $BRANCH
 
 	if [ $CUR_BRANCH != $BRANCH ] ; then

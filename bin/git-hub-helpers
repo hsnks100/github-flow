@@ -15,9 +15,9 @@ _stash_pop(){
 }
 
 # Get some config info.
-ORIGIN=$(git config --get github-flow.origin)
-UPSTREAM=$(git config --get github-flow.upstream)
-MASTER=$(git config --get github-flow.master)
+ORIGIN=origin # $(git config --get github-flow.origin)
+UPSTREAM=upstream # $(git config --get github-flow.upstream)
+MASTER=master # $(git config --get github-flow.master)
 
 # Helper to get an "OWNER/REPO" string.
 find_repo(){
