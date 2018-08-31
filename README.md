@@ -22,7 +22,6 @@ Usage
 
 Usage is very similar to git-flow
 
-`git hub-clone <org/repo>` Fork and clone a repository to use with git hub-flow.
 
 `git hub-feature start <feature>` Begin working on a new feature.
 
